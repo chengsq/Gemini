@@ -1,5 +1,5 @@
 /*********************************************************************************
-* Copyright (c) 2011,Embedded System Engineering center of  Zhejiang University
+*i  Copyright (c) 2011,Embedded System Engineering center of  Zhejiang University
 * All rights reserved.
 *
 * FILE NAME: nand.c
