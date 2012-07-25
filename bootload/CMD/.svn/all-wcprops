@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/os/!svn/ver/6371/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/CMD
+END
+linker_boot.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/os/!svn/ver/6371/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/CMD/linker_boot.cmd
+END

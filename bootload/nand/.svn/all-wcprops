@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/os/!svn/ver/6367/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/nand
+END
+nand_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/os/!svn/ver/6367/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/nand/nand_test.c
+END
+nand.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/os/!svn/ver/6352/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/nand/nand.c
+END
+nand.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/os/!svn/ver/6352/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/nand/nand.h
+END

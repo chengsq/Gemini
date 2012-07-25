@@ -1,0 +1,302 @@
+******************************************************************************
+               TMS320C6x Linker PC v6.1.12                     
+******************************************************************************
+>> Linked Sun Jul 22 12:51:07 2012
+
+OUTPUT FILE NAME:   <bootload.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: c8149fc0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  DRAM                  c8000000   00010000  00000000  00010000  RWIX
+  DRAM_PROG             c8100000   00800000  0004a5f0  007b5a10  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.ddrram    0    c8000000    00000000     UNINITIALIZED
+
+.data      0    c8100000    00000000     UNINITIALIZED
+
+.far       0    c8100000    00043610     UNINITIALIZED
+                  c8100000    00040000     boot.obj (.far)
+                  c8140000    0000354c     data.obj (.far)
+                  c814354c    000000a0     elf_loader.obj (.far)
+                  c81435ec    0000000c     C6747_uart.obj (.far)
+                  c81435f8    0000000c     rts6200.lib : exit.obj (.far)
+                  c8143604    00000008                 : _lock.obj (.far)
+                  c814360c    00000004     uart.obj (.far)
+
+.cinit     0    c8143610    0000363c     
+                  c8143610    00003554     data.obj (.cinit)
+                  c8146b64    00000004     --HOLE-- [fill = 0]
+                  c8146b68    0000002c     C6747_uart.obj (.cinit)
+                  c8146b94    00000004     --HOLE-- [fill = 0]
+                  c8146b98    0000002c     boot.obj (.cinit)
+                  c8146bc4    00000004     --HOLE-- [fill = 0]
+                  c8146bc8    0000002c     rts6200.lib : exit.obj (.cinit)
+                  c8146bf4    00000004     --HOLE-- [fill = 0]
+                  c8146bf8    0000001c                 : _lock.obj (.cinit)
+                  c8146c14    00000004     --HOLE-- [fill = 0]
+                  c8146c18    0000000c     elf_loader.obj (.cinit)
+                  c8146c24    00000004     --HOLE-- [fill = 0]
+                  c8146c28    0000000c     nand.obj (.cinit)
+                  c8146c34    00000004     --HOLE-- [fill = 0]
+                  c8146c38    0000000c     uart.obj (.cinit)
+                  c8146c44    00000004     --HOLE-- [fill = 0]
+                  c8146c48    00000004     (.pad.cinit) [fill = 0]
+
+.switch    0    c8146c4c    00000010     
+                  c8146c4c    00000010     C6747.obj (.switch)
+
+.text      0    c8146c60    000034c0     
+                  c8146c60    00000b20     C6747_init.obj (.text)
+                  c8147780    000008e0     nand.obj (.text)
+                  c8148060    00000700     boot.obj (.text)
+                  c8148760    000004c0     elf_loader.obj (.text)
+                  c8148c20    000003c0     C6747.obj (.text)
+                  c8148fe0    000003c0     uart.obj (.text)
+                  c81493a0    00000360     C6747_uart.obj (.text)
+                  c8149700    00000240     rts6200.lib : memcpy62.obj (.text:_memcpy)
+                  c8149940    00000140                 : autoinit.obj (.text:__auto_init)
+                  c8149a80    00000140                 : strasg.obj (.text:__strasgi)
+                  c8149bc0    00000120                 : divi.obj (.text:__divi)
+                  c8149ce0    00000120                 : exit.obj (.text:_exit)
+                  c8149e00    00000100                 : remi.obj (.text:__remi)
+                  c8149f00    000000c0                 : divu.obj (.text:__divu)
+                  c8149fc0    00000080                 : boot.obj (.text:_c_int00)
+                  c814a040    00000060     main.obj (.text)
+                  c814a0a0    00000040     rts6200.lib : args_main.obj (.text:__args_main)
+                  c814a0e0    00000020                 : _lock.obj (.text:__nop)
+                  c814a100    00000020                 : exit.obj (.text:_abort)
+
+.stack     0    c814a120    00000400     UNINITIALIZED
+                  c814a120    00000008     rts6200.lib : boot.obj (.stack)
+                  c814a128    000003f8     --HOLE--
+
+.const     0    c814a520    000000bc     
+                  c814a520    000000b8     boot.obj (.const:.string)
+                  c814a5d8    00000004     uart.obj (.const:.string)
+
+.bss       0    c814a5dc    00000018     UNINITIALIZED
+                  c814a5dc    00000010     boot.obj (.bss)
+                  c814a5ec    00000004     elf_loader.obj (.bss)
+                  c814a5f0    00000004     nand.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+c814a5dc   $bss
+c814a5dc   .bss
+c8100000   .data
+c8146c60   .text
+c814a100   C$$EXIT
+c8000000   DDRStart
+c81495a8   _C6747_UART_close
+c81496ac   _C6747_UART_getChar
+c81493a0   _C6747_UART_open
+c814961c   _C6747_UART_putChar
+c8149654   _C6747_UART_rcvReady
+c81495c4   _C6747_UART_xmtReady
+c8148d18   _C6747_init
+c8148c20   _C6747_wait
+c8148c80   _C6747_waitusec
+c81476c0   _CEint
+c8147780   _FLASHGPIO_init
+c8147308   _InitPLL
+c8146c60   _PSC0_lPSC_enable
+c8146d40   _PSC1_lPSC_enable
+c8147168   _SystemConfig
+00000400   __STACK_SIZE
+c8143600   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+c814a5dc   ___bss__
+ffffffff   ___c_args__
+c8143610   ___cinit__
+c8100000   ___data__
+c8100000   ___edata__
+c814a5f4   ___end__
+c814a120   ___etext__
+ffffffff   ___pinit__
+c8146c60   ___text__
+c814a0a0   __args_main
+c8149940   __auto_init
+c81435f8   __cleanup_ptr
+c8149bc0   __divi
+c8149f00   __divu
+c81435fc   __dtors_ptr
+c8143604   __lock
+c81477f4   __nand_busywait
+c814a0e0   __nop
+c8149e00   __remi
+c8148d58   __resetEMIF
+c8148f4c   __setupEMIF
+c814a120   __stack
+c8149a80   __strasgi
+c8143608   __unlock
+c8148cb8   __wait
+c814a100   _abort
+c814a5e8   _bootentry
+c8149fc0   _c_int00
+c8148804   _component_load
+c8140000   _data
+c8148060   _do_boot
+c814883c   _elf_prog_segment_loader
+c8147650   _emifconfig
+c8149ce0   _exit
+c8148bb0   _get_prog_entry
+c8146e20   _initpsc
+c8148504   _jump_to_elf_entry
+c8148a4c   _load_to_memory
+c814a040   _main
+c8149700   _memcpy
+c8148760   _move_memory
+c8147a68   _nand_erase_block
+c8147984   _nand_erase_one_block
+c8147928   _nand_info
+c8147890   _nand_init
+c8147f44   _nand_read
+c8147b0c   _nand_read_page
+c814a5f0   _nand_timeout
+c8147e40   _nand_write
+c8147c68   _nand_write_page
+c8148348   _pre_boot
+c8148614   _read_ais_from_nand
+c8148574   _read_elf_from_nand
+c8148270   _read_updated_func_table_from_nand
+c8148308   _read_updated_segment_table_from_nand
+c81485b4   _save_elf_to_nand
+c8148214   _save_updated_func_table_to_nand
+c81482b0   _save_updated_segment_table_to_nand
+c814770c   _sysinit
+c81486ac   _test_nand_write
+c8148fe0   _uart_open
+c814902c   _uart_print_char
+c8149124   _uart_print_int
+c81490b4   _uart_print_string
+c81492dc   _uart_recv_data
+c8148654   _write_ais_to_nand
+ffffffff   binit
+c8143610   cinit
+c8100000   edata
+c814a5f4   end
+c814a120   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000400   __STACK_SIZE
+c8000000   DDRStart
+c8100000   .data
+c8100000   ___data__
+c8100000   ___edata__
+c8100000   edata
+c8140000   _data
+c81435f8   __cleanup_ptr
+c81435fc   __dtors_ptr
+c8143600   ___TI_enable_exit_profile_output
+c8143604   __lock
+c8143608   __unlock
+c8143610   ___cinit__
+c8143610   cinit
+c8146c60   .text
+c8146c60   _PSC0_lPSC_enable
+c8146c60   ___text__
+c8146d40   _PSC1_lPSC_enable
+c8146e20   _initpsc
+c8147168   _SystemConfig
+c8147308   _InitPLL
+c8147650   _emifconfig
+c81476c0   _CEint
+c814770c   _sysinit
+c8147780   _FLASHGPIO_init
+c81477f4   __nand_busywait
+c8147890   _nand_init
+c8147928   _nand_info
+c8147984   _nand_erase_one_block
+c8147a68   _nand_erase_block
+c8147b0c   _nand_read_page
+c8147c68   _nand_write_page
+c8147e40   _nand_write
+c8147f44   _nand_read
+c8148060   _do_boot
+c8148214   _save_updated_func_table_to_nand
+c8148270   _read_updated_func_table_from_nand
+c81482b0   _save_updated_segment_table_to_nand
+c8148308   _read_updated_segment_table_from_nand
+c8148348   _pre_boot
+c8148504   _jump_to_elf_entry
+c8148574   _read_elf_from_nand
+c81485b4   _save_elf_to_nand
+c8148614   _read_ais_from_nand
+c8148654   _write_ais_to_nand
+c81486ac   _test_nand_write
+c8148760   _move_memory
+c8148804   _component_load
+c814883c   _elf_prog_segment_loader
+c8148a4c   _load_to_memory
+c8148bb0   _get_prog_entry
+c8148c20   _C6747_wait
+c8148c80   _C6747_waitusec
+c8148cb8   __wait
+c8148d18   _C6747_init
+c8148d58   __resetEMIF
+c8148f4c   __setupEMIF
+c8148fe0   _uart_open
+c814902c   _uart_print_char
+c81490b4   _uart_print_string
+c8149124   _uart_print_int
+c81492dc   _uart_recv_data
+c81493a0   _C6747_UART_open
+c81495a8   _C6747_UART_close
+c81495c4   _C6747_UART_xmtReady
+c814961c   _C6747_UART_putChar
+c8149654   _C6747_UART_rcvReady
+c81496ac   _C6747_UART_getChar
+c8149700   _memcpy
+c8149940   __auto_init
+c8149a80   __strasgi
+c8149bc0   __divi
+c8149ce0   _exit
+c8149e00   __remi
+c8149f00   __divu
+c8149fc0   _c_int00
+c814a040   _main
+c814a0a0   __args_main
+c814a0e0   __nop
+c814a100   C$$EXIT
+c814a100   _abort
+c814a120   ___etext__
+c814a120   __stack
+c814a120   etext
+c814a5dc   $bss
+c814a5dc   .bss
+c814a5dc   ___bss__
+c814a5e8   _bootentry
+c814a5f0   _nand_timeout
+c814a5f4   ___end__
+c814a5f4   end
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[99 symbols]

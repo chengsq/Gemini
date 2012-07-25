@@ -1,0 +1,1 @@
+"./6747/C6747_init.obj" "./6747/C6747.obj" "./elf/elf_loader.obj" "./nand/nand_test.obj" "./nand/nand.obj" "./sci/uart.obj" "./sci/C6747_uart.obj" "./source/main.obj" "./source/data.obj" "./source/boot.obj" "../CMD/linker_boot.cmd" 

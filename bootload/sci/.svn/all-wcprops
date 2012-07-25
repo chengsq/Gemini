@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/os/!svn/ver/6352/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/sci
+END
+uart.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/os/!svn/ver/6352/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/sci/uart.h
+END
+C6747_uart.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/os/!svn/ver/6167/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/sci/C6747_uart.c
+END
+uart.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/os/!svn/ver/6352/BSW/0-Software%20Delivery/branches/TI6747_BootLoader_V1.0_CSS4.0/bootload/sci/uart.c
+END
