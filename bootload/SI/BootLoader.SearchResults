@@ -1,4 +1,0 @@
----- nand_erase_block Matches (3 in 3 files) ----
-Nand.c (f:\ti-6474\workspace\bootload\nand):Int16 nand_erase_block(Uint32 addr,Uint32 block_count)
-Nand.h (f:\ti-6474\workspace\bootload\nand):Int16 nand_erase_block(Uint32 addr,Uint32 block_count);
-Nand_test.c (f:\ti-6474\workspace\bootload\nand):  nand_erase_block(0);	
